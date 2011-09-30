@@ -1,6 +1,8 @@
 //List.cpp 
 //Nathaniel Way 09252011
 
+#include "../incl/List.h"
+
 SLList::SLList()
 {
 	this->_next = 0;
@@ -9,7 +11,9 @@ SLList::SLList()
 SLList::~SLList()
 {
 	if( this->_next != 0 ){
+
 		delete this->_next;
+		printf("deleting %d\n", this->_next );
 	}
 }
 

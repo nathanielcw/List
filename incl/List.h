@@ -3,14 +3,14 @@
 
 #ifndef SLLIST_H
 #define SLLIST_H
+#include <stdio.h>
 
-
-Class SLList
+class SLList
 {
 
 	public:
 	SLList();
-	~SLList()	
+	~SLList();	
 
 	SLList* next();
 	void next( SLList* );
@@ -25,7 +25,7 @@ Class SLList
 #ifndef DLLIST_H
 #define DLLIST_H
 
-Class  DLList
+class  DLList
 {
 	public:
 	DLList();
